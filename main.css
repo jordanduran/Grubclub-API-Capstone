@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: url(images/main-bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+body img {
+  width: 100%;
+  height: auto;
+}
+
+button,
+input[type="text"] {
+  padding: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.error-message {
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+#js-form {
+  padding-top: 70%;
+  position: fixed;
+}
+
+#js-form label {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+#results {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#results address {
+    font-family: "Exo 2", sans-serif;
+    font-style: italic;
+}
+
+#results a {
+    color: #ff4747;
+}
+
+#results a:hover {
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 850px) {
+
+    
+  }
+
+  /* iPhone X */
+
+  @media screen and (min-width: 375px) {
+    #results {
+        display: relative;
+        position: relative;
+        margin-top: 30px;
+        background-color: rgba(255, 255, 255, 0.863);
+        border: 1px solid rgba(255, 158, 158, 0.295);
+        border-radius: 10px;
+        box-shadow: 4px 6px #131313;
+    }
+
+    #js-form {
+        position: relative;
+    }
+
+     body {
+         position: relative;
+     }
+  }
+
+  @media screen and (min-width: 1000px) {
+
+  }
