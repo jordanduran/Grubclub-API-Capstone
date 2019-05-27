@@ -29,9 +29,12 @@ function displayResults(responseJson) {
             <address>${
               responseJson.restaurants[i].restaurant.location.address
             }</address>
+            <p id="form-p">${responseJson.restaurants[i].restaurant.user_rating.votes} vote(s)</p>
+            <h4>${responseJson.restaurants[i].restaurant.user_rating.rating_text}</h4>
             <a href="${
               responseJson.restaurants[i].restaurant.url
-            }" target ="_blank">Click here for more details!</a>
+            }" id="form-a" target ="_blank">Click here for more details!</a>
+            
         `;
     fetch(
       `https://developers.zomato.com/api/v2.1/restaurant?res_id=${
