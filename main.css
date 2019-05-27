@@ -3,11 +3,14 @@
   text-decoration: none;
 }
 
+main {
+}
+
 h1 {
-    font-family: 'Exo 2', sans-serif;
-    color: white;
-    text-shadow: 2px 2px black;
-    text-align: center;
+  font-family: "Exo 2", sans-serif;
+  color: white;
+  text-shadow: 2px 2px black;
+  text-align: center;
 }
 
 body {
@@ -33,16 +36,15 @@ button:hover {
 }
 
 h4 {
-    font-family: 'Exo 2 regular', sans-serif;
-    font-style: italic;
-    font-weight: 400i;
+  font-family: "Exo 2 regular", sans-serif;
+  font-style: italic;
+  font-weight: 400i;
 }
 
 #form-p {
-    font-style: italic;
-    color: #ff4747;
+  font-style: italic;
+  color: #ff4747;
 }
-
 
 /* .container {
   max-width: 600px;
@@ -66,6 +68,8 @@ h4 {
   font-family: "Exo 2", sans-serif;
   font-weight: 600;
   font-size: 30px;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.795);
+  color: white;
 }
 
 #results {
@@ -75,74 +79,77 @@ h4 {
   background-color: rgba(255, 255, 255, 0.856);
   border-radius: 7px;
   text-align: center;
-  
 }
 
 #results address {
-    font-family: "Exo 2", sans-serif;
-    font-style: italic;
+  font-family: "Exo 2", sans-serif;
+  font-style: italic;
 }
 
 #results a {
-    color: #ff4747;
+  color: #ff4747;
 }
 
 #results a:hover {
-    cursor: pointer;
-    border-bottom: 1px solid black;
-    transition: 0.4s ease;
+  cursor: pointer;
+  border-bottom: 1px solid black;
+  transition: 0.4s ease;
 }
 
 #results h3 {
-    border-top: 1px solid rgba(0, 0, 0, 0.13);
-    padding-top: 30px;
+  border-top: 1px solid rgba(0, 0, 0, 0.13);
+  padding-top: 30px;
 }
 
 #submit-button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (max-width: 850px) {
+}
 
-    
+/* iPhone X */
+
+@media screen and (max-width: 375px) {
+  #results {
+    display: relative;
+    position: relative;
+    margin-top: 30px;
+    border-radius: 10px;
   }
 
-  /* iPhone X */
-
-  @media screen and (min-width: 375px) {
-    #results {
-        display: relative;
-        position: relative;
-        margin-top: 30px;
-        border-radius: 10px;
-    }
-
-    #js-form {
-        position: relative;
-    }
-
-     body {
-         position: relative;
-     }
-
-     #js-form label {
-         display: flex;
-         margin-left: 50px;
-     }
-
-     #js-form input {
-         margin-left: 50px;
-     }
-
-     #submit-button {
-         background-color: #ff4747;
-         border-radius: 6px;
-         color: white;
-         font-size: 20px;
-         font-family: 'Exo 2', sans-serif;
-     }
+  #js-form {
+    position: relative;
   }
 
-  @media screen and (min-width: 1000px) {
-
+  body {
+    position: relative;
   }
+
+  #js-form label {
+    display: flex;
+    margin-left: 50px;
+  }
+
+  #js-form input {
+    margin-left: 50px;
+  }
+
+  #submit-button {
+    background-color: #ff4747;
+    border-radius: 6px;
+    color: white;
+    font-size: 15px;
+    font-family: "Exo 2", sans-serif;
+  }
+
+  main {
+    background-image: url(images/main-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+}
