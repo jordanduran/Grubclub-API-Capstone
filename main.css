@@ -98,6 +98,9 @@ h4 {
     padding-top: 30px;
 }
 
+#submit-button:hover {
+    cursor: pointer;
+}
 
 @media screen and (min-width: 850px) {
 
@@ -120,6 +123,23 @@ h4 {
 
      body {
          position: relative;
+     }
+
+     #js-form label {
+         display: flex;
+         margin-left: 50px;
+     }
+
+     #js-form input {
+         margin-left: 50px;
+     }
+
+     #submit-button {
+         background-color: #ff4747;
+         border-radius: 6px;
+         color: white;
+         font-size: 20px;
+         font-family: 'Exo 2', sans-serif;
      }
   }
 
