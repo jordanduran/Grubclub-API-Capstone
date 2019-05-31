@@ -12,23 +12,26 @@
         <script src="https://code.jquery.com/jquery-3.3.1.js"
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
     </head>
-    <main>
     <body>
+        <main>
         
-            <h1>Grubclub</h1>
-            <div id="food-form"></div>
-            <form id="js-form">
-                <label for="find-food">I'm in the mood for :</label>
-                <input type="text" name="find-foods" id="user-search"
-                    placeholder="Pizza"
-                    required>
-                <input id="submit-button" type="submit" value="Find food!">
+            
+            <div id="food-form">
+                <h1>Grubclub</h1>
+                <form id="js-form">
+                    <label id="food_type" for="find-foods">I'm in the mood for :</label>
+                    <input type="text" name="find-foods" id="user-search"
+                        placeholder="Pizza"
+                        required>
+                    <label id="city_label"for="city">City :</label>
+                    <input type="text" name="city" id="user_city" placeholder="New York City">
+                    <input id="submit-button" type="submit" value="Find food!">
+                </form>
             </div>
-            </form>
             <div id="results">
 
             </div>
-            <p id="js-error-message" class="error-message"></p>
+            <p id="js_error" class="error-message"></p>
         
         <script src="script.js"></script>
     </main>
