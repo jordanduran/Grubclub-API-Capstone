@@ -43,6 +43,7 @@ function displayResults(responseJson) {
   let restsHtml = "";
   for (let i = 0; i < responseJson.restaurants.length; i++) {
     let restHtml = `
+          <div class="restaurant-container">
             <h3>${responseJson.restaurants[i].restaurant.name}</h3>
             <address>${
               responseJson.restaurants[i].restaurant.location.address
@@ -56,20 +57,9 @@ function displayResults(responseJson) {
             <a href="${
               responseJson.restaurants[i].restaurant.url
             }" id="form-a" target ="_blank">Click here for more details!</a>
+          </div>
             
         `;
-    // fetch(
-    //   `https://developers.zomato.com/api/v2.1/restaurant?res_id=${
-    //     responseJson.restaurants[i].restaurant.R.res_id
-    //   }`,
-    //   {
-    //     headers: {
-    //       "user-key": apiKey
-    //     }
-    //   }
-    // )
-    //   .then(response => response.json())
-    //   .then(responseJson => console.log(responseJson));
     restsHtml += restHtml;
   }
   $("#results").html(restsHtml);

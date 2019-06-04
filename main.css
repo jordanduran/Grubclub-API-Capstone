@@ -46,11 +46,6 @@ h4 {
   color: #ff4747;
 }
 
-/* .container {
-  max-width: 600px;
-  margin: 0 auto;
-} */
-
 .error-message {
   color: red;
 }
@@ -96,7 +91,7 @@ h4 {
 }
 
 #results h3 {
-  border-top: 1px solid rgba(0, 0, 0, 0.13);
+  border-top: 1px solid rgb(0, 0, 0);
   padding-top: 30px;
 }
 
@@ -104,7 +99,7 @@ h4 {
   cursor: pointer;
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (min-width:400px) and (max-width: 575px) {
   body {
   background-image: url(images/mobile-bg.jpg);
   background-size: 100%;
@@ -130,7 +125,83 @@ h4 {
   }
 
   #results {
-    background-color: rgba(174, 255, 255, 0.425);;
+    background-image: url(images/mobile-results-bg.jpg);
+    margin-top: 20px;
+  }
+
+  .restaurant-container {
+    background-color: rgba(248, 80, 80, 0.432);
+    padding: 1px;
+  }
+
+  h3, h4, address, p#form-p {
+    color: white;
+    text-shadow: 1px 2px 0px #000;
+  }
+
+  a#form-a {
+    border: 1px solid #ff4747;
+    background-color: white;
+    color: black;
+    border-radius: 7px;
+    padding: 5px;
+  }
+
+  h4 {
+    color: white;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+  background-image: url(images/mobile-bg.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 650px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  #food_type {
+    text-align: center;
+  }
+
+  #city_label {
+    text-align: center;
+    margin-left: 50px;
+  }
+
+  #js-form {
+    padding-top: px;
+  }
+
+  #results {
+    background-image: url(images/mobile-results-bg.jpg);
+    margin-top: 20px;
+  }
+
+  .restaurant-container {
+    background-color: rgba(248, 80, 80, 0.432);
+    padding: 1px;
+  }
+
+  h3, h4, address, p#form-p {
+    color: white;
+    text-shadow: 1px 2px 0px #000;
+  }
+
+  a#form-a {
+    border: 1px solid #ff4747;
+    background-color: white;
+    color: black;
+    border-radius: 7px;
+    padding: 5px;
+  }
+
+  h4 {
+    color: white;
   }
 }
 
@@ -138,21 +209,23 @@ h4 {
 
 @media screen and (max-width: 375px) {
   #results {
-    display: relative;
-    position: relative;
-    margin-top: 30px;
+    /* display: relative;
+    position: relative; */
+    0px;
     border-radius: 10px;
+    background-image: url(images/mobile-results-bg.jpg);
   }
 
   #js-form {
-    position: relative;
+    padding-bottom: px;
+  
   }
 
   body {
     background-image: url(images/mobile-bg.jpg);
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+    height: 650px;
   }
 
   #js-form label {
@@ -163,32 +236,48 @@ h4 {
   #js-form input {
     margin-left: 50px;
   }
-
-  #submit-button {
-    background-color: #ff4747;
-    border-radius: 6px;
-    color: white;
-    font-size: 15px;
-    font-family: "Exo 2", sans-serif;
-  }
 }
 
 /* Computers/Laptops */
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 700px) {
 
   #js-form {
     padding-bottom: 275px;
   }
 
   #results {
-    background-color: rgba(174, 255, 255, 0.425);
-
+    background-image: url(images/mobile-results-bg.jpg);
+    margin-top: 20px;
   }
+
   body {
   background-image: url(images/main-bg.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   height: 650px;
+  }
+
+  .restaurant-container {
+    background-color: rgba(248, 80, 80, 0.432);
+    padding: 1px;
+  }
+
+  h3, h4, address, p#form-p {
+    color: white;
+    text-shadow: 2px 2px 0px #000;
+  }
+
+  a#form-a {
+    border: 1px solid #ff4747;
+    background-color: white;
+    color: black;
+    border-radius: 7px;
+    padding: 5px;
+    
+  }
+
+  h4 {
+    color: white;
   }
 }
