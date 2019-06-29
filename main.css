@@ -22,6 +22,9 @@ body {
   /* background-size: 100%;
   background-repeat: no-repeat; */
   text-align: center;
+  /* background-image: url(images/food-bgs/food-wallpaper_ctad2r_c_scale\,w_1400.jpg); */
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 button,
@@ -117,8 +120,11 @@ h4 {
 @media (min-width: 721px) and (max-width: 1024px) {
   .form_div {
     display: block;
-  }
 
+}
+
+#food-form {
+  /* background-image: url(images/food-bgs/food-wallpaper_ctad2r_c_scale\,w_1379.jpg); */
 }
 
 
