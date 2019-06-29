@@ -56,7 +56,7 @@ function displayResults(responseJson) {
             }</h4>
             <a href="${
               responseJson.restaurants[i].restaurant.url
-            }" id="form-a" target ="_blank">Click here for more details!</a>
+            }" id="form-a" target ="_blank">More details on Zomato</a>
           </div>
             
         `;

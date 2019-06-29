@@ -19,13 +19,17 @@
             <div id="food-form">
                 <h1>Grubclub</h1>
                 <form id="js-form">
-                    <label id="food_type" for="find-foods">I'm in the mood for :</label>
-                    <input type="text" name="find-foods" id="user-search"
+                    <div class="form_div">
+                        <label id="food_type" for="find-foods">I'm in the mood for :</label>
+                        <input type="text" name="find-foods" id="user-search"
                         placeholder="Pizza"
                         required>
-                    <label id="city_label"for="city">City :</label>
-                    <input type="text" name="city" id="user_city" placeholder="New York City">
-                    <input id="submit-button" type="submit" value="Find food!">
+                    </div>
+                    <div class="form_div">
+                        <label id="city_label"for="city">City :</label>
+                        <input type="text" name="city" id="user_city" placeholder="New York City">
+                        <input id="submit-button" type="submit" value="Find food!">
+                    </div>
                 </form>
             </div>
             <div id="results">
