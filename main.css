@@ -1,3 +1,14 @@
+html, body, main, h1{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
 * {
   box-sizing: border-box;
   text-decoration: none;
@@ -13,7 +24,7 @@ h1 {
   text-align: center;
 }
 
-body {
+html, body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -22,9 +33,12 @@ body {
   /* background-size: 100%;
   background-repeat: no-repeat; */
   text-align: center;
-  /* background-image: url(images/food-bgs/food-wallpaper_ctad2r_c_scale\,w_1400.jpg); */
+  background-image: url(images/food-bgs/food-wallpaper_ctad2r_c_scale\,w_1400.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
+  padding-bottom: 50px;
+  /* overflow: hidden;
+  clip-path: polygon(0 0,100% 0,100% 100%,0 94%); */
 }
 
 button,
@@ -117,14 +131,17 @@ h4 {
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 721px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
   .form_div {
     display: block;
-
 }
 
 #food-form {
-  /* background-image: url(images/food-bgs/food-wallpaper_ctad2r_c_scale\,w_1379.jpg); */
+  background-image: url(images/food-bgs/food-wallpaper_ctad2r_c_scale\,w_808.jpg);
+}
+
+#js-form {
+  margin-top: 100px;
 }
 
 
@@ -133,9 +150,17 @@ h4 {
   ##Screen = B/w 320px to 479px
 */
 
-@media (min-width: 320px) and (max-width: 480px) {
+/* @media (min-width: 320px) and (max-width: 500px) {
   .form_div {
     display: block;
   }
+
+  #food-form {
+    background-image: url(images/food-bgs/food-wallpaper_ctad2r_c_scale\,w_808.jpg);
+  }
+
+  #js-form {
+    margin-top: 50px;
+  }
   
-}
+} */
