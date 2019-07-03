@@ -151,43 +151,42 @@ button, input[type="text"] {
 @media (max-width: 1024px) {
 
 body {
-  /* background-image: url(images/bg-3tran.png); */
   background-size: 100%;
   background-attachment: fixed;
   background-position: 100% 100%; 
   background-size: 100%;
-}
+ }
 
 .form_div {
   display: block;
-}
+ }
 
 #food-form {
   background-image: url(images/bg-3.jpg);
   background-repeat: no-repeat;
-}
+ }
 
 #js-form {
   margin-top: 30px;
   margin-bottom: 160px;
-}
+ }
 
 #js-form label {
   display: inline-block;
-}
+ }
 
 #city_label {
   margin-right: 0px;
-}
+ }
 }
 
 @media (max-width: 700px) {
   body {
-  background-image: url(images/mobilebg-3.png);
-  background-repeat: repeat;
-  background-attachment: fixed;
-  background-position: 100% 100%; 
-  background-size: 100%;
+    background-image: url(images/mobilebg-3.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: 100% 100%; 
+    background-size: 100%;
   }
 
   #js-form {

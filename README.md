@@ -15,4 +15,3 @@ In this app, the user will be able to search for any type of food desired for ex
 Technologies used:
 
 HTML, CSS, Javascript, jQuery, Photoshop
-
