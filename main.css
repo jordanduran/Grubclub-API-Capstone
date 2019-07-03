@@ -149,6 +149,15 @@ button, input[type="text"] {
 */
 
 @media (max-width: 1024px) {
+
+body {
+  /* background-image: url(images/bg-3tran.png); */
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position: 100% 100%; 
+  background-size: 100%;
+}
+
 .form_div {
   display: block;
 }
@@ -160,7 +169,7 @@ button, input[type="text"] {
 
 #js-form {
   margin-top: 30px;
-  margin-bottom: -20px;
+  margin-bottom: 160px;
 }
 
 #js-form label {
@@ -170,4 +179,19 @@ button, input[type="text"] {
 #city_label {
   margin-right: 0px;
 }
+}
+
+@media (max-width: 700px) {
+  body {
+  background-image: url(images/mobilebg-3.png);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: 100% 100%; 
+  background-size: 100%;
+  }
+
+  #js-form {
+    margin-bottom: 30px;
+  }
+  
 }
