@@ -93,6 +93,7 @@ input {
   border-radius: 8px;
   border: 1px solid #000;
   padding-top: 10px;
+  color: #ff5b5b;
 }
 
 button, input[type="text"] {
